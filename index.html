@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>From First Session to Lifelong Practice</title>
-<meta name="description" content="A product pitch for MyYogaTeacher by Smrity: three things I would ship to turn more first sessions into lasting practice.">
+<title>The Fortieth Session</title>
+<meta name="description" content="Two product ideas for MyYogaTeacher by Smrity: turn great first sessions into weekly habits, and catch drifting students before they cancel.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -22,72 +22,88 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:var(--acc)}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .5em}
-h1{font-size:clamp(2.1rem,5vw,3.4rem);letter-spacing:-.01em}
-h2{font-size:clamp(1.6rem,3.4vw,2.3rem)}
-h3{font-size:1.25rem}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.12;margin:0 0 .5em}
+h1{font-size:clamp(2.1rem,5.4vw,3.6rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.6rem,3.6vw,2.4rem)}
+h3{font-size:1.15rem}
 p{margin:0 0 1em}
 .eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:.8em}
 .mute{color:var(--mute)}
 nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
-nav b{font-family:Fraunces,serif;font-size:1.05rem}
-nav .links{display:flex;gap:18px;font-size:.88rem}
-nav .links a{color:var(--mute);text-decoration:none}
-nav .links a:hover{color:var(--ink)}
-@media(max-width:720px){nav .links{display:none}}
-section{padding:72px 0;border-bottom:1px solid var(--line)}
-.hero{padding:84px 0 64px}
-.hero .lede{font-size:1.18rem;max-width:720px;color:var(--mute)}
-.pill{display:inline-block;padding:4px 12px;border-radius:999px;background:var(--acc-soft);color:var(--acc);font-size:.82rem;font-weight:600;margin:0 6px 6px 0}
-.btn{display:inline-block;padding:12px 20px;border-radius:10px;background:var(--acc);color:#fff;text-decoration:none;font-weight:600;border:0;cursor:pointer;font:inherit;font-weight:600}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:54px;gap:12px}
+nav b{font-family:Fraunces,serif;font-size:1.02rem}
+nav a.mini{font-size:.86rem;font-weight:600;text-decoration:none}
+section{padding:68px 0;border-bottom:1px solid var(--line)}
+.hero{padding:76px 0 56px}
+.hero .lede{font-size:1.15rem;max-width:660px;color:var(--mute)}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;background:var(--acc);color:#fff;text-decoration:none;border:0;cursor:pointer;font:inherit;font-weight:600}
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
-.grid{display:grid;gap:16px}
-.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
-@media(max-width:860px){.g3,.g4{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.g3,.g2,.g4{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
-.stat b{display:block;font-family:Fraunces,serif;font-size:1.9rem;color:var(--acc);line-height:1.1}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.grid{display:grid;gap:14px}
+.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:760px){.g3,.g2{grid-template-columns:1fr}}
+.stat b{display:block;font-family:Fraunces,serif;font-size:2.2rem;color:var(--acc);line-height:1.05}
 .stat span{font-size:.9rem;color:var(--mute)}
-.num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--acc);color:#fff;font-weight:600;font-size:.9rem;margin-bottom:10px}
-table{width:100%;border-collapse:collapse;font-size:.93rem}
-th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);font-weight:600}
-.tablewrap{overflow-x:auto}
-.note{font-size:.84rem;color:var(--mute);border-left:3px solid var(--line);padding-left:12px;margin-top:14px}
+.chipsrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tag{display:inline-block;padding:5px 12px;border-radius:999px;font-size:.8rem;font-weight:600;background:var(--acc-soft);color:var(--acc)}
+.tag.s{background:var(--sage-soft);color:var(--sage)}
+.tag.g{background:var(--gold-soft);color:var(--gold)}
 
-/* prototype layout */
-.proto{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:start}
+/* journey visual */
+.journey{width:100%;height:auto;display:block}
+.journey text{font-family:Inter,sans-serif}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.85rem;color:var(--mute);margin-top:10px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+.jm{display:none}
+@media(max-width:640px){
+  .jcard{display:none}
+  .jm{display:flex;flex-direction:column;gap:0;margin-top:20px}
+  .jm-s{background:var(--acc-soft);border-radius:14px;padding:12px 16px;font-weight:600;text-align:center}
+  .jm-s small,.jm-m small{display:block;font-weight:400;color:var(--mute);font-size:.82rem}
+  .jm-m{display:flex;gap:12px;align-items:center;margin:0 18px;padding:14px 12px;border-left:2px dashed var(--acc);font-size:.92rem}
+  .jm-m.warn{border-color:var(--warn)}
+}
+/* idea layout */
+.idea-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px}
+.idea-num{flex:none;width:46px;height:46px;border-radius:14px;background:var(--acc);color:#fff;font-family:Fraunces,serif;font-size:1.4rem;display:flex;align-items:center;justify-content:center}
+.proto{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
 @media(max-width:860px){.proto{grid-template-columns:1fr}}
-.phone{width:100%;max-width:340px;margin:0 auto;background:var(--card);border:10px solid #2A2420;border-radius:38px;min-height:620px;padding:22px 18px;box-shadow:0 20px 50px rgba(60,30,10,.12);position:relative}
+.flow{display:flex;flex-direction:column;gap:10px}
+.fstep{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.fstep .ic{flex:none;width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;background:var(--acc-soft)}
+.fstep b{display:block;font-size:.95rem}
+.fstep span{font-size:.88rem;color:var(--mute)}
+.arrow{text-align:center;color:var(--acc);font-size:1.1rem;line-height:1}
+
+.phone{width:100%;max-width:330px;margin:0 auto;background:var(--card);border:10px solid #2A2420;border-radius:38px;min-height:600px;padding:24px 18px;box-shadow:0 22px 50px rgba(60,30,10,.14);position:relative}
 .phone:before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:90px;height:6px;border-radius:6px;background:#2A2420}
-.ph-h{font-family:Fraunces,serif;font-size:1.3rem;margin:10px 0 4px}
-.ph-sub{font-size:.85rem;color:var(--mute);margin-bottom:14px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
-.chip{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:7px 12px;font-size:.84rem;cursor:pointer;font-family:inherit}
+.tabs{display:flex;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px;margin:8px 0 14px}
+.tabs button{flex:1;border:0;background:transparent;font:inherit;font-size:.8rem;font-weight:600;padding:7px;border-radius:999px;color:var(--mute);cursor:pointer}
+.tabs button.on{background:var(--acc);color:#fff}
+.ph-h{font-family:Fraunces,serif;font-size:1.25rem;margin:4px 0 4px;line-height:1.2}
+.ph-sub{font-size:.84rem;color:var(--mute);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.chip{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:7px 11px;font-size:.82rem;cursor:pointer;font-family:inherit}
 .chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
-.q{font-size:.8rem;font-weight:600;color:var(--mute);text-transform:uppercase;letter-spacing:.06em;margin:6px 0 8px}
-.match{border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:10px;display:flex;gap:10px;align-items:center;background:var(--bg)}
-.av{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;color:#fff;flex:none}
-.match small{display:block;color:var(--mute);font-size:.78rem;line-height:1.35}
-.tagline{font-size:.74rem;background:var(--sage-soft);color:var(--sage);padding:2px 8px;border-radius:999px;display:inline-block;margin-top:4px}
-.slot{display:flex;justify-content:space-between;align-items:center;border:1px dashed var(--acc);border-radius:12px;padding:10px 12px;margin:10px 0;font-size:.88rem;background:var(--acc-soft)}
-.full{width:100%;text-align:center;margin-top:6px}
-.stepper{display:flex;gap:6px;margin-bottom:6px}
-.stepper i{flex:1;height:4px;border-radius:4px;background:var(--line)}
-.stepper i.on{background:var(--acc)}
-.recap li{margin-bottom:6px;font-size:.88rem}
-.week{display:grid;grid-template-columns:auto 1fr;gap:8px 10px;font-size:.86rem;margin:8px 0 12px}
-.week b{color:var(--acc)}
-.why h3{margin-top:4px}
-.why ul{padding-left:18px;margin:0}
-.why li{margin-bottom:8px}
+.q{font-size:.74rem;font-weight:600;color:var(--mute);text-transform:uppercase;letter-spacing:.07em;margin:6px 0 8px}
+.teach{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+.av{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;color:#fff;flex:none;background:#C86B3C;font-size:.9rem}
+.note-card{background:var(--acc-soft);border-radius:14px;padding:12px;font-size:.88rem;margin-bottom:12px}
+.note-card li{margin-bottom:5px}
+.weeks{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:12px}
+.wk{border-radius:10px;padding:8px 6px;text-align:center;font-size:.7rem;background:var(--bg);border:1px solid var(--line);line-height:1.3}
+.wk b{display:block;color:var(--acc);font-size:.78rem}
+.slot{display:flex;justify-content:space-between;align-items:center;border:1.5px dashed var(--acc);border-radius:12px;padding:10px 12px;margin:0 0 10px;font-size:.84rem}
+.full{width:100%;text-align:center}
 
 /* radar */
-.radar{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.radar{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 @media(max-width:860px){.radar{grid-template-columns:1fr}}
-.sig{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.sig{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.sig:last-child{border-bottom:0}
 .sig small{display:block;color:var(--mute);font-size:.8rem}
 .tog{position:relative;width:44px;height:24px;flex:none}
 .tog input{opacity:0;width:0;height:0}
@@ -95,388 +111,298 @@ th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mu
 .tog span:before{content:"";position:absolute;width:18px;height:18px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.2s}
 .tog input:checked+span{background:var(--acc)}
 .tog input:checked+span:before{transform:translateX(20px)}
-.meter{height:12px;border-radius:12px;background:var(--line);overflow:hidden;margin:8px 0 6px}
-.meter div{height:100%;width:0;border-radius:12px;transition:width .35s,background .35s}
-.score{font-family:Fraunces,serif;font-size:2.6rem;line-height:1}
-.badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.8rem;font-weight:600}
-.play{border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px;background:var(--bg);font-size:.9rem}
+.gauge{display:flex;justify-content:center;margin:4px 0 4px}
+.gauge svg{width:220px;height:auto}
+.badge{display:inline-block;padding:3px 12px;border-radius:999px;font-size:.82rem;font-weight:600}
+.play{display:flex;gap:10px;border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px;background:var(--bg);font-size:.88rem}
+.play .ic{flex:none;font-size:1.2rem}
 .play b{display:block;margin-bottom:2px}
+.spark{display:flex;align-items:flex-end;gap:5px;height:56px;margin:8px 0 2px}
+.spark div{flex:1;border-radius:4px 4px 0 0;background:var(--sage);transition:height .35s,background .35s}
+.spark-l{display:flex;justify-content:space-between;font-size:.72rem;color:var(--mute)}
 
-/* funnel */
-.funnel{display:flex;flex-direction:column;gap:8px}
-.frow{display:grid;grid-template-columns:150px 1fr 70px;gap:10px;align-items:center;font-size:.9rem}
-.fbar{height:26px;border-radius:8px;background:var(--acc-soft);position:relative;overflow:hidden}
-.fbar div{position:absolute;inset:0 auto 0 0;background:var(--acc);border-radius:8px;transition:width .35s}
+/* impact */
+.frow{display:grid;grid-template-columns:120px 1fr 56px;gap:10px;align-items:center;font-size:.9rem;margin-bottom:8px}
+.fbar{height:28px;border-radius:8px;background:var(--acc-soft);position:relative;overflow:hidden}
+.fbar div{position:absolute;inset:0 auto 0 0;border-radius:8px;transition:width .35s}
+.fbar .b0{background:color-mix(in srgb,var(--acc) 35%,transparent)}
+.fbar .b1{background:var(--acc)}
 input[type=range]{width:100%;accent-color:var(--acc)}
-.slider{margin:10px 0 16px}
-.slider label{display:flex;justify-content:space-between;font-size:.88rem}
-@media(max-width:600px){.frow{grid-template-columns:100px 1fr 56px}}
+.slider{margin:8px 0 16px}
+.slider label{display:flex;justify-content:space-between;font-size:.88rem;gap:10px}
+@media(max-width:600px){.frow{grid-template-columns:96px 1fr 54px;font-size:.82rem}}
+.note{font-size:.82rem;color:var(--mute);border-left:3px solid var(--line);padding-left:12px;margin-top:14px}
 
-.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:760px){.timeline{grid-template-columns:1fr}}
-.timeline .card h3{color:var(--acc)}
-.timeline ul{padding-left:18px;margin:0}
-.timeline li{margin-bottom:6px;font-size:.94rem}
-footer{padding:56px 0 72px}
-.decision td:first-child{font-weight:600;white-space:nowrap}
-.k{font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
-.k.fast{background:var(--sage-soft);color:var(--sage)}
-.k.deep{background:var(--gold-soft);color:var(--gold)}
+.me{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start}
+@media(max-width:860px){.me{grid-template-columns:1fr}}
+.me ul{padding-left:18px;margin:0}
+.me li{margin-bottom:8px}
+footer{padding:60px 0 72px}
 </style>
 </head>
 <body>
 
 <nav><div class="wrap">
   <b>Smrity &times; MyYogaTeacher</b>
-  <div class="links">
-    <a href="#model">The model</a><a href="#noticed">What I noticed</a><a href="#build1">The builds</a><a href="#plan">90 days</a><a href="#me">Why me</a>
-  </div>
+  <a class="mini" href="mailto:thakursmrity@gmail.com?subject=MyYogaTeacher%20PM%20role">Get in touch</a>
 </div></nav>
 
 <header class="hero"><div class="wrap">
-  <div class="eyebrow">A pitch for the Product Manager, Consumer Experience role</div>
-  <h1>Your teachers already win the first session.<br>I want to help win the fortieth.</h1>
-  <p class="lede">Hi Jitendra. I studied MyYogaTeacher's website, pricing and membership rules, both apps, and your community forum. Then I built three working prototypes for the part of the journey I believe moves revenue most: the gap between a great free session and a weekly habit that lasts. Everything below is clickable.</p>
-  <div style="margin:22px 0 26px">
-    <span class="pill">Trial to paid</span><span class="pill">First 30 days</span><span class="pill">Credit usage as a retention signal</span><span class="pill">Ambivalence before churn</span>
-  </div>
-  <a class="btn" href="#build1">Try the prototypes</a>
-  <a class="btn ghost" href="#me" style="margin-left:8px">Who is Smrity</a>
+  <div class="eyebrow">For MyYogaTeacher &middot; Product Manager, Consumer Experience</div>
+  <h1>Your teachers win the first session.<br>Let's win the fortieth.</h1>
+  <p class="lede">I studied your site, pricing, both apps and your community forum. I came back with two ideas, not twenty. Both are working prototypes below, and both aim at the gap between one great free class and a habit that lasts.</p>
+  <div class="btns"><a class="btn" href="#idea1">See the two ideas</a><a class="btn ghost" href="#me">Who is Smrity</a></div>
 </div></header>
 
-<section id="model"><div class="wrap">
-  <div class="eyebrow">01 &middot; How the business makes money, as I read it</div>
-  <h2>A membership business where usage is the product</h2>
-  <p class="mute" style="max-width:760px">From public pages, the engine is a recurring membership billed every four weeks. Group classes bring people in; recurring 1-on-1 credits are where the relationship, and most of the value, lives.</p>
-  <div class="grid g4" style="margin:24px 0">
-    <div class="card stat"><b>$0</b><span>Free first session, no credit card. Lowest possible barrier to try.</span></div>
-    <div class="card stat"><b>4 or 8</b><span>1-on-1 credits per 4 week cycle. Two a week is the most popular plan.</span></div>
-    <div class="card stat"><b>&lt;$20/hr</b><span>Personal teacher at a fraction of a US studio private. The core wedge.</span></div>
-    <div class="card stat"><b>Up to 20%</b><span>Off for 3, 6 and 12 month plans. Commitment is already monetised.</span></div>
+<!-- WHERE THE VALUE LEAKS -->
+<section><div class="wrap">
+  <div class="eyebrow">Where I'd focus</div>
+  <h2>The business is a habit. Two moments decide it.</h2>
+  <p class="mute" style="max-width:700px">Members pay every 4 weeks, and most choose two 1-on-1 sessions a week. Revenue grows when a student practises week after week. So I would protect the two moments where that habit is most likely to break.</p>
+  <div class="card jcard" style="margin-top:20px;padding:18px 14px">
+    <svg class="journey" viewBox="0 0 960 250" role="img" aria-label="Student journey from free session to lasting member, with two moments highlighted">
+      <defs>
+        <linearGradient id="gr" x1="0" x2="1"><stop offset="0" stop-color="var(--acc)" stop-opacity=".9"/><stop offset="1" stop-color="var(--acc)" stop-opacity=".35"/></linearGradient>
+      </defs>
+      <!-- funnel band -->
+      <path d="M20,60 L240,60 L480,88 L720,112 L940,124 L940,166 L720,178 L480,202 L240,230 L20,230 Z" fill="url(#gr)" opacity=".22"/>
+      <path d="M20,60 L240,60 L480,88 L720,112 L940,124" fill="none" stroke="var(--acc)" stroke-width="2.5"/>
+      <path d="M20,230 L240,230 L480,202 L720,178 L940,166" fill="none" stroke="var(--acc)" stroke-width="2.5"/>
+      <!-- stages -->
+      <g font-size="15" font-weight="600" fill="var(--ink)" text-anchor="middle">
+        <text x="130" y="150">Free session</text>
+        <text x="480" y="150">Becomes a member</text>
+        <text x="830" y="150">Still practising</text>
+      </g>
+      <g font-size="12.5" fill="var(--mute)" text-anchor="middle">
+        <text x="130" y="170">Loved the teacher</text>
+        <text x="480" y="170">Session 2 to 8</text>
+        <text x="830" y="170">Month 3 and beyond</text>
+      </g>
+      <!-- moment markers -->
+      <g>
+        <circle cx="300" cy="34" r="16" fill="var(--acc)"/><text x="300" y="40" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">1</text>
+        <line x1="300" y1="50" x2="300" y2="236" stroke="var(--acc)" stroke-dasharray="4 5" stroke-width="1.5"/>
+        <text x="324" y="30" font-size="13.5" font-weight="600" fill="var(--ink)">The silence after class one</text>
+        <text x="324" y="47" font-size="12" fill="var(--mute)">No recap, no plan, just a pricing page</text>
+      </g>
+      <g>
+        <circle cx="660" cy="34" r="16" fill="var(--warn)"/><text x="660" y="40" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">2</text>
+        <line x1="660" y1="50" x2="660" y2="236" stroke="var(--warn)" stroke-dasharray="4 5" stroke-width="1.5"/>
+        <text x="684" y="30" font-size="13.5" font-weight="600" fill="var(--ink)">The quiet drift</text>
+        <text x="684" y="47" font-size="12" fill="var(--mute)">Credits roll over, nobody notices</text>
+      </g>
+    </svg>
+    <div class="legend"><span><i style="background:var(--acc)"></i>Idea 1: First Session Recap</span><span><i style="background:var(--warn)"></i>Idea 2: Drift Radar</span></div>
   </div>
-  <div class="tablewrap card" style="padding:8px 18px">
-  <table>
-    <tr><th>Lever</th><th>What exists today</th><th>What it tells me</th></tr>
-    <tr><td>Acquisition</td><td>Free session, $50 referral credit, gift cards, kids referral, HSA/FSA eligibility</td><td>Strong top of funnel and a health spend angle few yoga apps have</td></tr>
-    <tr><td>Conversion</td><td>Group unlimited plans and 1-on-1 credit plans, monthly or longer term</td><td>The decision after session one carries the whole business</td></tr>
-    <tr><td>Retention</td><td>Unused credits roll over while active, pause up to 3 times a year, replacement teachers</td><td>You already design against churn. Rollover also hides early disengagement</td></tr>
-    <tr><td>Rhythm</td><td>The teacher app now prompts students into weekly repeat sessions</td><td>The team has seen that a fixed weekly slot predicts staying. I want to extend that to day one</td></tr>
-  </table>
+  <div class="jm">
+    <div class="jm-s">Free session<small>Loved the teacher</small></div>
+    <div class="jm-m"><span class="idea-num" style="width:34px;height:34px;font-size:1rem">1</span><div><b>The silence after class one</b><small>No recap, no plan, just a pricing page</small></div></div>
+    <div class="jm-s">Becomes a member<small>Session 2 to 8</small></div>
+    <div class="jm-m warn"><span class="idea-num" style="width:34px;height:34px;font-size:1rem;background:var(--warn)">2</span><div><b>The quiet drift</b><small>Credits roll over, nobody notices</small></div></div>
+    <div class="jm-s">Still practising<small>Month 3 and beyond</small></div>
   </div>
-  <p class="note">Sources: myyogateacher.com home, FAQ, membership FAQ and price update articles, App Store listings for the student and teacher apps, and public community threads. Where I use numbers inside prototypes, they are illustrative assumptions for the demo, not claims about your data.</p>
 </div></section>
 
-<section id="noticed"><div class="wrap">
-  <div class="eyebrow">02 &middot; What I noticed as a prospective student</div>
-  <h2>Five small frictions with outsized impact</h2>
-  <div class="grid g3" style="margin-top:22px">
-    <div class="card"><h3>The match is a moment, not a system</h3><p class="mute">I pick a goal and get a teacher. My worries (a bad knee, being a beginner at 50, being seen on camera) never reach the teacher before we meet.</p></div>
-    <div class="card"><h3>The best session ends in silence</h3><p class="mute">After a wonderful first class there is no recap of what my teacher saw and no plan. The pricing page has to do the persuading alone.</p></div>
-    <div class="card"><h3>Rollover can mask a goodbye</h3><p class="mute">Unused credits rolling forward is generous, but a growing balance is often the earliest sign a student is quietly drifting.</p></div>
-    <div class="card"><h3>Community lives off the app</h3><p class="mute">Members on the forum asked why community is not in the mobile app, where the daily habit actually happens.</p></div>
-    <div class="card"><h3>Small app trust gaps</h3><p class="mute">Members reported a class type filter not working while booking and confusion over whether a rating was saved. Small, but trust compounds.</p></div>
-    <div class="card" style="background:var(--acc-soft);border-color:transparent"><h3>The job to be done</h3><p>People do not hire MyYogaTeacher for yoga. They hire it for <b>someone who notices them and keeps them coming back</b>. Every build below protects that.</p></div>
-  </div>
-</div></section>
-
-<!-- BUILD 1 -->
-<section id="build1"><div class="wrap">
-  <div class="eyebrow">03 &middot; Build one</div>
-  <h2>Intent Match: the teacher meets you before you meet</h2>
-  <div class="proto" style="margin-top:22px">
-    <div class="why">
-      <p>A 40 second intake that captures not only the goal, but the <b>worry</b> and the <b>rhythm</b>. It matches three teachers with a reason for each, and it ends by holding a weekly slot, so the free session is booked as session one of a routine instead of a one off.</p>
-      <h3>Hypothesis</h3>
-      <ul>
-        <li>Students who book their trial into a repeating weekly slot convert and stay at a higher rate than those who book a single session.</li>
-        <li>Sharing the student's worry with the teacher before class raises first session quality and confidence to continue.</li>
-      </ul>
-      <h3>Measure</h3>
-      <ul>
-        <li>Primary: trial to paid conversion within 14 days</li>
-        <li>Leading: share of trials booked as a recurring slot, intake completion rate, first session rating</li>
-        <li>Guardrail: sign up completion must not drop</li>
-      </ul>
-      <h3>Smallest version</h3>
-      <ul><li>Two extra questions on the existing flow and a "hold this time weekly" checkbox. One sprint, A/B tested.</li></ul>
+<!-- IDEA 1 -->
+<section id="idea1"><div class="wrap">
+  <div class="idea-head"><div class="idea-num">1</div><div>
+    <div class="eyebrow" style="margin-bottom:.3em">Trial to paid</div>
+    <h2 style="margin:0">First Session Recap: the teacher's eyes, in writing</h2>
+  </div></div>
+  <div class="proto">
+    <div>
+      <p style="font-size:1.05rem">Students say it best: <i>"my teacher sees me."</i> Today that feeling ends when Zoom closes. Here the teacher taps what they noticed, AI writes a warm recap and a 4-week path in the teacher's voice, and the student's weekly slot is held. The plan offer arrives attached to proof that someone saw them.</p>
+      <div class="flow">
+        <div class="fstep"><div class="ic">&#128064;</div><div><b>Teacher taps 2 or 3 observations</b><span>Under 30 seconds, right after class</span></div></div>
+        <div class="arrow">&#8595;</div>
+        <div class="fstep"><div class="ic">&#9997;&#65039;</div><div><b>AI drafts the recap, teacher approves</b><span>No medical claims, teacher has final say</span></div></div>
+        <div class="arrow">&#8595;</div>
+        <div class="fstep"><div class="ic">&#128197;</div><div><b>Student gets a plan and a held weekly slot</b><span>Within the hour, while the glow is fresh</span></div></div>
+      </div>
+      <div class="chipsrow"><span class="tag">Measure: paid within 72 hrs</span><span class="tag s">Leading: slots kept</span><span class="tag g">MVP: one sprint, 10 teachers</span></div>
     </div>
     <div class="phone" id="p1"></div>
   </div>
 </div></section>
 
-<!-- BUILD 2 -->
-<section id="build2"><div class="wrap">
-  <div class="eyebrow">04 &middot; Build two</div>
-  <h2>First Session Recap: the teacher's eyes, in writing</h2>
-  <div class="proto" style="margin-top:22px">
-    <div class="phone" id="p2"></div>
-    <div class="why">
-      <p>Teachers already notice everything: tight hamstrings, shallow breathing, a guarded lower back. Today that insight disappears when Zoom closes. The teacher taps a few observations; AI turns them into a warm, personal recap and a four week path in the teacher's voice. The plan offer arrives attached to proof that someone saw you.</p>
-      <h3>Hypothesis</h3>
-      <ul>
-        <li>A personal recap with a concrete four week path, delivered within an hour of session one, lifts trial to paid more than a generic pricing nudge.</li>
-        <li>Recommending a rhythm (2 a week) instead of a plan name steers students to the plan most likely to build the habit.</li>
-      </ul>
-      <h3>Measure</h3>
-      <ul>
-        <li>Primary: paid conversion within 72 hours of first session</li>
-        <li>Leading: recap open rate, slot reservations, share of new members on 2 a week</li>
-        <li>Teacher side: time to write notes stays under 60 seconds</li>
-      </ul>
-      <h3>Edge cases I would spec</h3>
-      <ul><li>Health conditions in notes: AI never adds medical claims, teacher approves before send. Student no shows. Teacher on leave next week. Time zone shifts after daylight saving.</li></ul>
-    </div>
-  </div>
-</div></section>
-
-<!-- BUILD 3 -->
-<section id="build3"><div class="wrap">
-  <div class="eyebrow">05 &middot; Build three</div>
-  <h2>Ambivalence Radar: catch the drift before the cancel click</h2>
-  <p class="mute" style="max-width:780px">Your JD asks for someone who can identify ambivalence. People rarely churn in a day; they drift for weeks. This turns quiet behavioural signals into a score and recommends the gentlest save, routed to the teacher first because the relationship is the product. Toggle the signals.</p>
-  <div class="radar" style="margin-top:22px">
+<!-- IDEA 2 -->
+<section id="idea2"><div class="wrap">
+  <div class="idea-head"><div class="idea-num" style="background:var(--warn)">2</div><div>
+    <div class="eyebrow" style="margin-bottom:.3em;color:var(--warn)">Retention</div>
+    <h2 style="margin:0">Drift Radar: notice the goodbye before the cancel click</h2>
+  </div></div>
+  <p class="mute" style="max-width:740px">People rarely quit yoga in a day. They drift for weeks: credits pile up, sessions get cancelled late, the weekly slot disappears. The Radar turns those quiet signals into one score and suggests the gentlest save, sent by the teacher first, because the relationship is the product. <b>Switch the signals on and off.</b></p>
+  <div class="radar" style="margin-top:20px">
     <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-        <div><b>Maya, 47</b><br><small class="mute">2 a week plan &middot; Month 3 &middot; Goal: back pain</small></div>
-        <span class="badge" style="background:var(--sage-soft);color:var(--sage)">Member</span>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <div class="teach" style="margin:0"><div class="av" style="background:#8A5BA8">M</div><div><b>Maya, 47</b><br><small class="mute">Two a week &middot; Month 3 &middot; Back pain</small></div></div>
       </div>
-      <div id="signals"></div>
+      <div class="q" style="margin-top:12px">Sessions attended, last 8 weeks</div>
+      <div class="spark" id="spark"></div>
+      <div class="spark-l"><span>8 wks ago</span><span>this week</span></div>
+      <div id="signals" style="margin-top:8px"></div>
     </div>
     <div class="card">
       <div class="q">Drift score</div>
-      <div style="display:flex;align-items:baseline;gap:12px"><div class="score" id="score">0</div><span class="badge" id="level"></span></div>
-      <div class="meter"><div id="bar"></div></div>
-      <p class="mute" style="font-size:.86rem" id="explain"></p>
-      <div class="q" style="margin-top:14px">Recommended plays</div>
+      <div class="gauge"><svg viewBox="0 0 220 130" aria-label="Drift score gauge">
+        <path d="M20,115 A90,90 0 0 1 200,115" fill="none" stroke="var(--line)" stroke-width="16" stroke-linecap="round"/>
+        <path id="garc" d="M20,115 A90,90 0 0 1 200,115" fill="none" stroke="var(--sage)" stroke-width="16" stroke-linecap="round" pathLength="100" stroke-dasharray="0 100" style="transition:stroke-dasharray .4s,stroke .4s"/>
+        <text id="gnum" x="110" y="104" text-anchor="middle" font-family="Fraunces,serif" font-size="40" fill="var(--ink)">0</text>
+      </svg></div>
+      <div style="text-align:center"><span class="badge" id="level"></span></div>
+      <div class="q" style="margin-top:16px">What happens next</div>
       <div id="plays"></div>
     </div>
   </div>
-  <p class="note">Weights are illustrative. In the real build I would fit them on historical cohorts (who drifted, who left) and validate with interviews of churned students before automating anything.</p>
+  <div class="chipsrow"><span class="tag">Measure: month 3 retention</span><span class="tag s">Leading: saves accepted, slots rebooked</span><span class="tag g">MVP: a weekly teacher alert, no automation</span></div>
 </div></section>
 
-<!-- FUNNEL -->
-<section id="funnel"><div class="wrap">
-  <div class="eyebrow">06 &middot; Why these three, in numbers</div>
-  <h2>Small lifts at each step compound</h2>
-  <p class="mute" style="max-width:760px">An illustrative model of 10,000 free sessions a month. The baseline rates are my assumptions for the demo. Move the sliders to see how modest lifts from the three builds stack into active members.</p>
-  <div class="grid g2" style="margin-top:22px">
+<!-- IMPACT -->
+<section id="impact"><div class="wrap">
+  <div class="eyebrow">Why it matters</div>
+  <h2>Two small lifts, one big compounding effect</h2>
+  <p class="mute" style="max-width:700px">An illustrative model for every 10,000 free sessions. Baselines are my assumptions, not your data. Drag the sliders.</p>
+  <div class="grid g2" style="margin-top:18px">
     <div class="card">
-      <div class="slider"><label><span>Intent Match: trials booked as weekly slot</span><b id="v1">+0 pts</b></label><input type="range" id="s1" min="0" max="15" value="0"></div>
-      <div class="slider"><label><span>Recap: trial to paid lift</span><b id="v2">+0 pts</b></label><input type="range" id="s2" min="0" max="10" value="0"></div>
-      <div class="slider"><label><span>Radar: month 3 retention lift</span><b id="v3">+0 pts</b></label><input type="range" id="s3" min="0" max="15" value="0"></div>
-      <p class="note">Baseline assumptions: 80% attend the free session, 18% convert, 60% still active at month 3.</p>
-    </div>
-    <div class="card">
-      <div class="funnel" id="fun"></div>
-      <div style="margin-top:18px;display:flex;gap:24px;flex-wrap:wrap">
-        <div class="stat"><b id="active">0</b><span>active members at month 3</span></div>
-        <div class="stat"><b id="delta">+0%</b><span>vs baseline</span></div>
+      <div class="slider"><label><span>Idea 1: lift in trial to paid</span><b id="v1"></b></label><input type="range" id="s1" min="0" max="10" value="4"></div>
+      <div class="slider"><label><span>Idea 2: lift in month 3 retention</span><b id="v2"></b></label><input type="range" id="s2" min="0" max="15" value="8"></div>
+      <div class="grid g2" style="gap:10px">
+        <div class="stat"><b id="active"></b><span>members still practising at month 3</span></div>
+        <div class="stat"><b id="delta"></b><span>more than today</span></div>
       </div>
+      <p class="note">Assumed today: 80% attend the free session, 18% become members, 60% still active at month 3.</p>
     </div>
-  </div>
-</div></section>
-
-<!-- DECISION LOG -->
-<section><div class="wrap">
-  <div class="eyebrow">07 &middot; How I would decide</div>
-  <h2>A starter decision log</h2>
-  <div class="card tablewrap" style="padding:8px 18px;margin-top:18px">
-  <table class="decision">
-    <tr><th>Decision</th><th>Type</th><th>Why</th><th>Assumption under test</th></tr>
-    <tr><td>Add worry and rhythm to intake</td><td><span class="k fast">Fast, reversible</span></td><td>Two questions, easy to remove</td><td>Extra steps will not hurt sign up completion</td></tr>
-    <tr><td>Default the trial to a weekly slot</td><td><span class="k fast">Fast, reversible</span></td><td>Mirrors what the teacher app already nudges</td><td>Recurring booking predicts paid conversion</td></tr>
-    <tr><td>AI written recap</td><td><span class="k deep">Research first</span></td><td>Touches health language and teacher trust</td><td>Teachers will add notes if it takes under a minute</td></tr>
-    <tr><td>Automated save offers</td><td><span class="k deep">Research first</span></td><td>Wrong offer at the wrong time feels like surveillance</td><td>Teacher outreach beats discounts for drifting students</td></tr>
-  </table>
-  </div>
-</div></section>
-
-<!-- PLAN -->
-<section id="plan"><div class="wrap">
-  <div class="eyebrow">08 &middot; My first 90 days</div>
-  <h2>Listen, ship small, prove it</h2>
-  <div class="timeline" style="margin-top:22px">
-    <div class="card"><h3>Days 1 to 30</h3><ul>
-      <li>Talk to 30 people: new trials, members, churned students, 8 teachers, sales and care</li>
-      <li>Sit in on live sessions and care chats</li>
-      <li>Map the trial journey with real drop off data</li>
-      <li>Fix the small app trust gaps (filters, ratings)</li>
-      <li>Ship the intake questions as an A/B test</li></ul></div>
-    <div class="card"><h3>Days 31 to 60</h3><ul>
-      <li>Read the first experiment, decide, log why</li>
-      <li>Pilot the recap with 10 volunteer teachers</li>
-      <li>Define a drift signal set with analytics</li>
-      <li>Build an AI synthesis loop for tickets and session feedback</li></ul></div>
-    <div class="card"><h3>Days 61 to 90</h3><ul>
-      <li>Scale what worked, kill what did not</li>
-      <li>Ambivalence Radar v1 as a teacher alert, no automation yet</li>
-      <li>Bring community into the app as a light weekly touchpoint</li>
-      <li>Share results: what moved, what we learned, what next</li></ul></div>
+    <div class="card" id="fun"></div>
   </div>
 </div></section>
 
 <!-- WHY ME -->
 <section id="me"><div class="wrap">
-  <div class="eyebrow">09 &middot; Why me</div>
-  <h2>I talk to customers weekly, and I build wellness products myself</h2>
-  <div class="grid g2" style="margin-top:22px">
-    <div class="card why">
-      <h3>The proof</h3>
+  <div class="eyebrow">Why me</div>
+  <h2>I talk to customers every week. I build habit products myself.</h2>
+  <div class="grid g3" style="margin:20px 0">
+    <div class="card stat"><b>90%+</b><span>retention across ~40 accounts I owned end to end</span></div>
+    <div class="card stat"><b>22%</b><span>fewer repeat tickets, from fixing journeys at the root, at 80% CSAT</span></div>
+    <div class="card stat"><b>4 AI</b><span>features shipped to production: LLM, RAG, ML anomaly detection, forecasting</span></div>
+  </div>
+  <div class="me">
+    <div class="card">
       <ul>
-        <li><b>8 years in product</b>, 6 of them owning outcomes directly with customers at Xorosoft (200 brands, US, Canada, APAC)</li>
-        <li><b>90%+ retention</b> across ~40 accounts I owned end to end, <b>80% CSAT</b>, <b>22% fewer repeat tickets</b>, <b>4.9/5 on G2</b></li>
-        <li><b>Shipped AI to production:</b> LLM query layer on MCP, RAG assistant, ML anomaly detection, demand forecasting</li>
-        <li><b>US customer hours</b> are my normal working rhythm today</li>
+        <li><b>8 years in product</b> at a commerce platform serving 200 brands across the US, Canada and APAC, working US customer hours every day.</li>
+        <li><b>Built a social habit app</b> (Flowify) from idea to real users and ran it for a year. My biggest lesson: retention is designed, not hoped for.</li>
+        <li><b>Built and launched a yoga student platform</b> (deepinyog.com), live now: sign up, needs-based paths, programs, 1-on-1 requests and payments.</li>
+        <li><b>AI is how I work.</b> This page, the research behind it and both prototypes took a weekend.</li>
       </ul>
     </div>
-    <div class="card why">
-      <h3>The fit</h3>
-      <ul>
-        <li><b>I am building a yoga student platform</b> for a teacher right now: sign up, needs based paths, programs, 1-on-1 requests, payments</li>
-        <li><b>I built and ran a social habit app</b> (Flowify) for a year and learned the hard way that retention is designed, not hoped for</li>
-        <li><b>I use AI every day</b> to research, synthesise and prototype. This page took a weekend, not a quarter</li>
-        <li>I care about helping people build habits that last. That is the job here</li>
-      </ul>
+    <div class="card" style="background:var(--acc-soft);border-color:transparent">
+      <h3>My first 30 days</h3>
+      <p style="margin:0">Talk to 30 students, members, churned students and teachers. Sit in on sessions and care chats. Pilot the Recap with 10 teachers. Come back with what worked, what didn't, and what we do next.</p>
     </div>
   </div>
 </div></section>
 
 <footer><div class="wrap">
   <h2>Can I walk you through it in 20 minutes?</h2>
-  <p class="mute" style="max-width:640px">I would love to hear where I am wrong. Every assumption here is meant to be tested with your data and your students in week one.</p>
-  <a class="btn" href="mailto:thakursmrity@gmail.com?subject=MyYogaTeacher%20PM%20role">Email Smrity</a>
-  <a class="btn ghost" href="https://www.linkedin.com/in/thakursmrity" target="_blank" rel="noopener" style="margin-left:8px">LinkedIn</a>
-  <a class="btn ghost" href="https://smritybuilds.com" target="_blank" rel="noopener" style="margin-left:8px">smritybuilds.com</a>
-  <p class="note" style="margin-top:28px">An independent concept by Smrity, built from public information. Not affiliated with or endorsed by MyYogaTeacher. Teacher names and student details in the prototypes are fictional.</p>
+  <p class="mute" style="max-width:600px">I'd love to hear where I'm wrong. Every assumption here is meant to be tested against your data in week one.</p>
+  <div class="btns">
+    <a class="btn" href="mailto:thakursmrity@gmail.com?subject=MyYogaTeacher%20PM%20role">Email Smrity</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/thakursmrity" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn ghost" href="https://smritybuilds.com" target="_blank" rel="noopener">smritybuilds.com</a>
+  </div>
+  <p class="note" style="margin-top:28px">An independent concept by Smrity, built from public information. Not affiliated with or endorsed by MyYogaTeacher. Names in the prototypes are fictional.</p>
 </div></footer>
 
 <script>
-/* ---------- Build 1: Intent Match ---------- */
-const goals=["Back or neck pain","Flexibility","Stress and sleep","Weight loss","Strength","Prenatal or postnatal"];
-const worries=["I'm a total beginner","Old injury","Feeling self conscious on camera","Never stuck with anything","Not sure I have time"];
-const times=["Early morning","Lunch break","After work","Late evening"];
-const teachers=[
- {n:"Ananya R.",c:"#C86B3C",s:"Therapeutic yoga, 11 yrs",fits:["Back or neck pain","Stress and sleep"],w:["Old injury"]},
- {n:"Vikram S.",c:"#4F7A5E",s:"Strength and mobility, M.A. Yoga",fits:["Strength","Weight loss","Flexibility"],w:["Never stuck with anything"]},
- {n:"Meera K.",c:"#8A5BA8",s:"Gentle and beginner flows, 9 yrs",fits:["Flexibility","Stress and sleep"],w:["I'm a total beginner","Feeling self conscious on camera"]},
- {n:"Dr. Kavita P.",c:"#B7861E",s:"Prenatal and hormonal health",fits:["Prenatal or postnatal"],w:["Old injury","I'm a total beginner"]},
- {n:"Arjun M.",c:"#3F6E8C",s:"Breathwork and short sessions",fits:["Stress and sleep","Weight loss"],w:["Not sure I have time"]}
+/* ---------- Idea 1: Recap ---------- */
+const obs=[
+ {k:"Tight hamstrings",r:"Your hamstrings hold a lot of tension, which often pulls on the lower back.",w:"Hamstring release"},
+ {k:"Shallow breathing",r:"Your breath stays high in the chest when poses get hard.",w:"Belly breathing"},
+ {k:"Guarded lower back",r:"You protect your lower back well. We'll build strength around it slowly.",w:"Gentle core"},
+ {k:"Great balance",r:"Your balance is a real strength. We'll use it to build confidence.",w:"Standing flow"},
+ {k:"Stiff shoulders",r:"Your shoulders carry the day, like most desk workers.",w:"Shoulder openers"}
 ];
-const st={step:0,goal:null,worry:[],time:null};
+let picked=["Tight hamstrings","Shallow breathing"],view="teacher",kept=false;
 const p1=document.getElementById("p1");
-function stepper(n){return `<div class="stepper">${[0,1,2,3].map(i=>`<i class="${i<=n?'on':''}"></i>`).join("")}</div>`}
-function chipList(arr,sel,key,multi){return `<div class="chips">${arr.map(a=>`<button class="chip ${multi?(sel.includes(a)?'on':''):(sel===a?'on':'')}" data-k="${key}" data-v="${a}">${a}</button>`).join("")}</div>`}
 function render1(){
-  let h="";
-  if(st.step===0){h=stepper(0)+`<div class="ph-h">What brings you to the mat?</div><div class="ph-sub">Pick the one that matters most right now.</div>`+chipList(goals,st.goal,"goal");
-    h+=`<button class="btn full" ${st.goal?'':'disabled style="opacity:.45"'} data-next>Continue</button>`}
-  else if(st.step===1){h=stepper(1)+`<div class="ph-h">Anything on your mind?</div><div class="ph-sub">Your teacher will see this before you meet. Choose any.</div>`+chipList(worries,st.worry,"worry",true);
-    h+=`<button class="btn full" data-next>${st.worry.length?'Continue':'Nothing, continue'}</button>`}
-  else if(st.step===2){h=stepper(2)+`<div class="ph-h">When could this become a habit?</div><div class="ph-sub">We'll look for a time you can repeat every week.</div>`+chipList(times,st.time,"time");
-    h+=`<button class="btn full" ${st.time?'':'disabled style="opacity:.45"'} data-next>Find my teachers</button>`}
-  else{
-    const ranked=teachers.map(t=>({...t,sc:(t.fits.includes(st.goal)?3:0)+t.w.filter(w=>st.worry.includes(w)).length*2})).sort((a,b)=>b.sc-a.sc).slice(0,3);
-    const why=t=>{const r=[];if(t.fits.includes(st.goal))r.push(st.goal.toLowerCase());t.w.filter(w=>st.worry.includes(w)).forEach(w=>r.push(w.replace("I'm a ","").toLowerCase()));return r.length?"Great with "+r.join(", "):"Loved by new students"};
-    h=stepper(3)+`<div class="ph-h">Your teachers</div><div class="ph-sub">Matched on ${st.goal.toLowerCase()}${st.worry.length?' and what you shared':''}.</div>`;
-    ranked.forEach((t,i)=>{h+=`<div class="match"><div class="av" style="background:${t.c}">${t.n.split(" ").map(x=>x[0]).join("").slice(0,2)}</div><div><b style="font-size:.92rem">${t.n}</b>${i===0?' <span class="tagline">Best fit</span>':''}<small>${t.s}</small><small>${why(t)}</small></div></div>`});
-    const day={"Early morning":"Tue 7:00 AM","Lunch break":"Wed 12:30 PM","After work":"Thu 6:30 PM","Late evening":"Mon 8:30 PM"}[st.time];
-    h+=`<div class="slot"><span>First session with ${ranked[0].n.split(" ")[0]}<br><b>${day}</b></span><span>&#10003; Hold weekly</span></div>`;
-    h+=`<button class="btn full" data-reset>Book my session</button><p class="ph-sub" style="margin-top:10px;text-align:center">${ranked[0].n.split(" ")[0]} will read your note before class.</p>`;
+  let h=`<div class="tabs"><button class="${view==='teacher'?'on':''}" data-v="teacher">Teacher app</button><button class="${view==='student'?'on':''}" data-v="student">Student app</button></div>`;
+  if(view==="teacher"){
+    h+=`<div class="ph-h">How was Maya's first class?</div><div class="ph-sub">Tap what you noticed. We'll write it in your voice.</div>`;
+    h+=`<div class="chips">${obs.map(o=>`<button class="chip ${picked.includes(o.k)?'on':''}" data-o="${o.k}">${o.k}</button>`).join("")}</div>`;
+    h+=`<div class="q">Suggested rhythm</div><div class="chips"><button class="chip on">Two a week</button><button class="chip">Once a week</button></div>`;
+    h+=`<div class="q">Hold her slot</div><div class="slot"><span>Thursdays, 6:30 PM</span><span>&#10003;</span></div>`;
+    h+=`<button class="btn full" data-send ${picked.length?'':'disabled style="opacity:.45"'}>Approve and send to Maya</button>`;
+  }else{
+    const sel=obs.filter(o=>picked.includes(o.k));
+    const plan=[...sel.map(o=>o.w),"First full flow","Check in"].slice(0,4);
+    h+=`<div class="teach"><div class="av">A</div><div><b style="font-size:.95rem">From Ananya</b><br><small class="mute">40 minutes after your class</small></div></div>`;
+    h+=`<div class="ph-h">Maya, here's what I noticed</div>`;
+    h+=`<div class="note-card"><ul style="padding-left:16px;margin:0">${sel.map(o=>`<li>${o.r}</li>`).join("")||"<li>Lovely first class. Let's keep going.</li>"}</ul></div>`;
+    h+=`<div class="q">Your next 4 weeks</div><div class="weeks">${plan.map((p,i)=>`<div class="wk"><b>Wk ${i+1}</b>${p}</div>`).join("")}</div>`;
+    h+=`<div class="slot"><span>Thursdays 6:30 PM with Ananya<br><b>Held for you for 48 hours</b></span></div>`;
+    h+=`<button class="btn full" data-keep ${kept?'style="background:var(--sage)"':''}>${kept?'&#10003; See you Thursday':'Keep my spot &middot; Two a week'}</button>`;
   }
   p1.innerHTML=h;
 }
-p1.addEventListener("click",e=>{
-  const b=e.target.closest("button");if(!b)return;
-  if(b.dataset.k==="goal")st.goal=b.dataset.v;
-  else if(b.dataset.k==="time")st.time=b.dataset.v;
-  else if(b.dataset.k==="worry"){const v=b.dataset.v;st.worry=st.worry.includes(v)?st.worry.filter(x=>x!==v):[...st.worry,v]}
-  else if("next" in b.dataset){if(b.disabled)return;st.step++}
-  else if("reset" in b.dataset){b.textContent="Booked. See you there.";b.style.background="var(--sage)";setTimeout(()=>{Object.assign(st,{step:0,goal:null,worry:[],time:null});render1()},2200);return}
-  render1();
-});
+p1.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.v){view=b.dataset.v;kept=false}
+  else if(b.dataset.o){const v=b.dataset.o;picked=picked.includes(v)?picked.filter(x=>x!==v):[...picked,v]}
+  else if("send" in b.dataset){if(!picked.length)return;view="student";kept=false}
+  else if("keep" in b.dataset){kept=true}
+  render1();});
 render1();
 
-/* ---------- Build 2: Recap ---------- */
-const obs=[
- {k:"Tight hamstrings",r:"Your hamstrings are holding a lot of tension, which often pulls on the lower back.",w:"Gentle hamstring release and supported forward folds"},
- {k:"Shallow breathing",r:"Your breath tends to stay high in the chest when poses get challenging.",w:"Belly breathing practice you can do at your desk"},
- {k:"Guarded lower back",r:"You protect your lower back well. We'll build strength around it slowly.",w:"Core activation without strain"},
- {k:"Great balance",r:"Your balance is a real strength. We'll use it to build confidence.",w:"Standing sequences to grow stability"},
- {k:"Stiff shoulders",r:"Your shoulders carry the day. Most desk workers feel this.",w:"Shoulder openers and posture resets"}
-];
-let picked=["Tight hamstrings","Shallow breathing"],view="teacher";
-const p2=document.getElementById("p2");
-function render2(){
-  let h;
-  if(view==="teacher"){
-    h=`<div class="q" style="margin-top:12px">Teacher app &middot; 30 seconds</div><div class="ph-h">How was Maya's first class?</div><div class="ph-sub">Tap what you noticed. We'll write the recap in your voice for you to approve.</div>`;
-    h+=`<div class="chips">${obs.map(o=>`<button class="chip ${picked.includes(o.k)?'on':''}" data-o="${o.k}">${o.k}</button>`).join("")}</div>`;
-    h+=`<div class="q">Suggested rhythm</div><div class="chips"><button class="chip on">2 a week</button><button class="chip">1 a week</button></div>`;
-    h+=`<button class="btn full" data-send ${picked.length?'':'disabled style="opacity:.45"'}>Preview recap for Maya</button>`;
-  }else{
-    const sel=obs.filter(o=>picked.includes(o.k));
-    h=`<div class="q" style="margin-top:12px">Student app &middot; 40 minutes after class</div><div class="ph-h">Maya, here's what Ananya noticed</div>`;
-    h+=`<ul class="recap" style="padding-left:18px;margin:8px 0">${sel.map(o=>`<li>${o.r}</li>`).join("")}</ul>`;
-    h+=`<div class="q">Your next 4 weeks</div><div class="week">`;
-    const plan=[...sel.map(o=>o.w),"Your first full flow, at your own pace","Check in: how does your back feel now?"].slice(0,4);
-    plan.forEach((p,i)=>h+=`<b>Wk ${i+1}</b><span>${p}</span>`);
-    h+=`</div><div class="slot"><span>Thursdays 6:30 PM with Ananya<br><b>Held for you for 48 hours</b></span></div>`;
-    h+=`<button class="btn full">Keep my spot &middot; 2 a week</button><button class="btn ghost full" data-back style="margin-top:8px">Back to teacher view</button>`;
-  }
-  p2.innerHTML=h;
-}
-p2.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
-  if(b.dataset.o){const v=b.dataset.o;picked=picked.includes(v)?picked.filter(x=>x!==v):[...picked,v]}
-  else if("send" in b.dataset){if(!picked.length)return;view="student"}
-  else if("back" in b.dataset)view="teacher";
-  render2();});
-render2();
-
-/* ---------- Build 3: Ambivalence Radar ---------- */
+/* ---------- Idea 2: Drift Radar ---------- */
 const sigs=[
- {k:"credits",t:"Unused credits piling up",d:"5 credits rolled over this cycle",w:22,on:true},
- {k:"miss",t:"Missed or late cancelled sessions",d:"2 in the last 14 days",w:20,on:true},
- {k:"slot",t:"No fixed weekly slot",d:"Books ad hoc, often same day",w:14,on:false},
- {k:"teacher",t:"Teacher changed twice",d:"Hasn't found her person",w:12,on:false},
- {k:"group",t:"Dropped group classes",d:"From 3 a week to 0",w:10,on:false},
- {k:"pricing",t:"Viewed pause or cancel page",d:"Yesterday, 2 visits",w:22,on:false}
+ {k:"credits",t:"Unused credits piling up",d:"5 rolled over this cycle",w:25,on:true},
+ {k:"miss",t:"Late cancels and no-shows",d:"2 in the last 14 days",w:25,on:true},
+ {k:"slot",t:"Lost her weekly slot",d:"Now books same day, ad hoc",w:20,on:false},
+ {k:"cancel",t:"Visited the cancel page",d:"Twice, yesterday",w:30,on:false}
 ];
 const sigEl=document.getElementById("signals");
-sigEl.innerHTML=sigs.map(s=>`<div class="sig"><div>${s.t}<small>${s.d}</small></div><label class="tog"><input type="checkbox" data-s="${s.k}" ${s.on?'checked':''}><span></span></label></div>`).join("");
-sigEl.addEventListener("change",e=>{const s=sigs.find(x=>x.k===e.target.dataset.s);s.on=e.target.checked;render3()});
-function render3(){
-  const on=sigs.filter(s=>s.on),score=Math.min(100,on.reduce((a,s)=>a+s.w,0));
-  document.getElementById("score").textContent=score;
+sigEl.innerHTML=sigs.map(s=>`<div class="sig"><div>${s.t}<small>${s.d}</small></div><label class="tog"><input type="checkbox" data-s="${s.k}" ${s.on?'checked':''} aria-label="${s.t}"><span></span></label></div>`).join("");
+sigEl.addEventListener("change",e=>{sigs.find(x=>x.k===e.target.dataset.s).on=e.target.checked;render2()});
+function render2(){
+  const on=k=>sigs.find(s=>s.k===k).on;
+  const score=Math.min(100,sigs.filter(s=>s.on).reduce((a,s)=>a+s.w,0));
   const lvl=score>=60?["High drift","var(--warn-soft)","var(--warn)"]:score>=30?["Drifting","var(--gold-soft)","var(--gold)"]:["Steady","var(--sage-soft)","var(--sage)"];
+  const arc=document.getElementById("garc");arc.setAttribute("stroke-dasharray",`${Math.max(score,1)} 100`);arc.setAttribute("stroke",lvl[2]);
+  document.getElementById("gnum").textContent=score;
   const L=document.getElementById("level");L.textContent=lvl[0];L.style.background=lvl[1];L.style.color=lvl[2];
-  const bar=document.getElementById("bar");bar.style.width=score+"%";bar.style.background=lvl[2];
-  document.getElementById("explain").textContent=on.length?"Driven by: "+on.map(s=>s.t.toLowerCase()).join(", ")+".":"No warning signals. Maya is building her habit.";
+  /* attendance sparkline reacts to score */
+  const base=[2,2,2,2,2,2,2,2],drop=score/100;
+  const vals=base.map((v,i)=>Math.max(0.15,v-(i>=4?drop*(i-3)*0.55:0)));
+  document.getElementById("spark").innerHTML=vals.map(v=>`<div style="height:${v/2*100}%;background:${v<1.2?lvl[2]:'var(--sage)'}"></div>`).join("");
   const plays=[];
-  if(score===0)plays.push(["Celebrate","Send a streak note from Ananya at session 12. Ask for a referral while she is happiest."]);
-  if(on.find(s=>s.k==="slot"||s.k==="miss"))plays.push(["Teacher check in first","Ananya sends a 20 second voice note and offers to fix one weekly time together."]);
-  if(on.find(s=>s.k==="credits"))plays.push(["Right size, don't lose","Suggest moving to 1 a week instead of cancelling, keeping her rollover credits active."]);
-  if(on.find(s=>s.k==="teacher"))plays.push(["Rematch","Rerun Intent Match with her goal and worries, and offer a no cost intro with a new teacher."]);
-  if(on.find(s=>s.k==="pricing"))plays.push(["Offer a pause, framed kindly","Show pause before cancel, with the date her teacher will save her slot until."]);
-  if(on.find(s=>s.k==="group")&&plays.length<4)plays.push(["Community nudge","Invite her to a small themed group class with familiar faces this week."]);
-  document.getElementById("plays").innerHTML=plays.slice(0,3).map(p=>`<div class="play"><b>${p[0]}</b>${p[1]}</div>`).join("");
+  if(score===0)plays.push(["&#127881;","Celebrate","Ananya sends a session 12 note. Ask for a referral while Maya is happiest."]);
+  if(on("miss")||on("slot"))plays.push(["&#127897;&#65039;","Teacher check in first","Ananya sends a 20 second voice note and offers to fix one weekly time together."]);
+  if(on("credits"))plays.push(["&#8596;&#65039;","Right size, don't lose","Suggest once a week instead of cancelling, keeping her rolled over credits."]);
+  if(on("cancel"))plays.push(["&#9208;&#65039;","Offer a kind pause","Show pause before cancel, with the date Ananya will hold her slot until."]);
+  document.getElementById("plays").innerHTML=plays.slice(0,3).map(p=>`<div class="play"><div class="ic">${p[0]}</div><div><b>${p[1]}</b>${p[2]}</div></div>`).join("");
 }
-render3();
+render2();
 
-/* ---------- Funnel model ---------- */
-const base={trials:10000,attend:.80,conv:.18,ret:.60};
+/* ---------- Impact model ---------- */
+const s1=document.getElementById("s1"),s2=document.getElementById("s2");
 function renderF(){
-  const a=+s1.value,b=+s2.value,c=+s3.value;
-  v1.textContent="+"+a+" pts";v2.textContent="+"+b+" pts";v3.textContent="+"+c+" pts";
-  const attend=base.attend+a/100*0.4, conv=base.conv+b/100+a/100*0.25, ret=Math.min(.95,base.ret+c/100);
-  const rows=[["Free sessions booked",base.trials],["Attended",base.trials*attend],["Became members",base.trials*attend*conv],["Active at month 3",base.trials*attend*conv*ret]];
-  document.getElementById("fun").innerHTML=rows.map(r=>`<div class="frow"><span>${r[0]}</span><div class="fbar"><div style="width:${Math.max(2,r[1]/base.trials*100)}%"></div></div><b>${Math.round(r[1]).toLocaleString()}</b></div>`).join("");
-  const bl=base.trials*base.attend*base.conv*base.ret, now=rows[3][1];
+  const a=+s1.value,b=+s2.value;
+  document.getElementById("v1").textContent="+"+a+" pts";document.getElementById("v2").textContent="+"+b+" pts";
+  const T=10000,att=.8,c0=.18,r0=.60,c1=c0+a/100,r1=Math.min(.95,r0+b/100);
+  const rows=[["Free sessions",T,T],["Attended",T*att,T*att],["Members",T*att*c0,T*att*c1],["Month 3",T*att*c0*r0,T*att*c1*r1]];
+  const mx=rows[2][2];
+  let h=`<div class="q" style="margin-top:0">Out of 10,000 free sessions</div>`;
+  [rows[2],rows[3]].forEach(r=>{
+    h+=`<div style="margin:14px 0 4px;font-weight:600">${r[0]==="Month 3"?"Still practising at month 3":"Become members"}</div>`;
+    h+=`<div class="frow"><span class="mute">Today</span><div class="fbar"><div class="b0" style="width:${r[1]/mx*100}%"></div></div><b>${Math.round(r[1]).toLocaleString()}</b></div>`;
+    h+=`<div class="frow"><span>With both ideas</span><div class="fbar"><div class="b1" style="width:${r[2]/mx*100}%"></div></div><b style="color:var(--acc)">${Math.round(r[2]).toLocaleString()}</b></div>`;
+  });
+  h+=`<p class="note">Every extra member at month 3 is recurring revenue billed every 4 weeks, without spending another dollar to acquire them.</p>`;
+  document.getElementById("fun").innerHTML=h;
+  const bl=rows[3][1],now=rows[3][2];
   document.getElementById("active").textContent=Math.round(now).toLocaleString();
   document.getElementById("delta").textContent="+"+Math.round((now/bl-1)*100)+"%";
 }
-const s1=document.getElementById("s1"),s2=document.getElementById("s2"),s3=document.getElementById("s3"),v1=document.getElementById("v1"),v2=document.getElementById("v2"),v3=document.getElementById("v3");
-[s1,s2,s3].forEach(s=>s.addEventListener("input",renderF));
-s1.value=6;s2.value=4;s3.value=8;renderF();
+[s1,s2].forEach(s=>s.addEventListener("input",renderF));renderF();
 </script>
 </body>
 </html>
